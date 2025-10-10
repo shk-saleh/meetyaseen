@@ -26,6 +26,7 @@
 
 <body>
   <!-- ================= Canvas ================= -->
+  <div class="star-container"></div>
 
 
   <!--LEFT ASIDE_BOX -->
@@ -33,34 +34,28 @@
   <div class="container-fluid main-canvas">
     <div class="row">
       <div class="col-lg-4">
-        <div class="profile-card">
-          <!-- Top icons -->
-          <div class="profile-top">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-cog"></i>
-          </div>
-
+        <div class="profile-card Border">
           <!-- Profile Image -->
           <div class="profile-img">
-            <img src="https://picsum.photos/400/400" alt="Profile">
+            <img src="./Assets/photo.png" alt="Profile">
           </div>
 
           <!-- Profile Info -->
-          <div class="profile-info">
+          <div class="profile-info mt-4">
             <h2 class="name">Muhammad Yaseen</h2>
-            <p class="role">Master Trainer</p>
+            <span class="role">Master Trainer/Educator</span>
           </div>
 
           <!-- Social Links -->
           <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-reddit-alien"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#" class="Border"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="Border"><i class="fab fa-reddit-alien"></i></a>
+            <a href="#" class="Border"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="Border"><i class="fab fa-github"></i></a>
           </div>
 
           <!-- Button -->
-          <button class="download-btn">Download CV</button>
+          <button class="download-btn mt-3">Download CV</button>
         </div>
 
       </div>
@@ -72,22 +67,40 @@
 
       <div class="col-lg-8  right-aside-box">
         <!-- ================= NAVBAR ================= -->
-       <nav class="custom-navbar">
-          <ul>
+        <nav class="custom-navbar d-flex align-items-center justify-content-between">
+          <!-- Hamburger for mobile -->
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" id="navbarHamburger">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+          <!-- Nav links -->
+          <ul class="navbar-links d-none d-lg-flex mb-0">
             <li><a href="index.html">About</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="blog.html ">Blog</a></li>
-            <li><a href="contact.html active">Contact</a></li>
+            <li><a href="Resume.html" class="active">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
+          <!-- Theme toggle button -->
+          <button id="themeToggle" class="theme-toggle-btn ms-2 border-0 bg-transparent">
+            <span id="themeIcon">
+              <i class="fa-solid fa-sun"></i>
+            </span>
+          </button>
         </nav>
+        <!-- Mobile nav links (hidden by default) -->
+        <ul class="navbar-links-mobile d-lg-none" id="mobileNav" style="display:none;">
+          <li><a href="index.html">About</a></li>
+          <li><a href="Resume.html" class="active">Resume</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
 
 
 
         <!-- ================= Conatct SECTION ================= -->
 
-          <section class="contact-section py-2">
-            <div class="container">
+          <section class="contact-section py-0">
+            <div class="container p-0">
               <h2 class="gray mb-5 ">Contact</h2>
             
               <!-- Contact Info -->
@@ -98,7 +111,7 @@
                     <i class="ri-phone-line contact-icon"></i>
                     <div class="ms-3">
                       <h6 class="text-sm yellow mb-1">Phone</h6>
-                      <p class="text-sm white mb-0">+1 840 841 25 69</p>
+                      <p class="text-sm white mb-0">+92 300 980 2822</p>
                     </div>
                   </div>
                 </div>
@@ -109,7 +122,7 @@
                     <i class="ri-mail-line contact-icon"></i>
                     <div class="ms-3">
                       <h6 class="text-sm yellow mb-1">Email</h6>
-                      <p class="text-sm white mb-0">ANDREW@WEBSITE.COM</p>
+                      <a href="mailto:shk_yaseen78@yahoo.com" class="text-sm white mb-0">shk_yaseen78@yahoo.com</a>
                     </div>
                   </div>
                 </div>
@@ -120,7 +133,7 @@
                     <i class="ri-map-pin-line contact-icon"></i>
                     <div class="ms-3">
                       <h6 class="text-sm yellow mb-1">Address</h6>
-                      <p class="text-sm white mb-0">LOS ANGELES, CALIFORNIA, USA</p>
+                      <p class="text-sm white mb-0">I-14, Islamabad </p>
                     </div>
                   </div>
                 </div>
@@ -136,19 +149,19 @@
 
               <!-- Contact Form -->
               <div class="contact-form">
-                <h3 class="text-md white mb-4">Let's make your project brilliant!</h3>
+                <h3 class="text-md white mb-4">Let's Collaborate!</h3>
                 <form>
                   <div class="row g-3">
                     <div class="col-md-6">
-                      <input type="text" class="form-control Border bg-transparent text-sm white"
+                      <input type="text" class="form-control Border bg-transparent text-sm white p-3"
                         placeholder="Full Name">
                     </div>
                     <div class="col-md-6">
-                      <input type="email" class="form-control Border bg-transparent text-sm white"
+                      <input type="email" class="form-control Border bg-transparent text-sm white p-3"
                         placeholder="Email Address">
                     </div>
                     <div class="col-12">
-                      <textarea class="form-control Border bg-transparent text-sm white" rows="5"
+                      <textarea class="form-control Border bg-transparent text-sm p-3 white" rows="5"
                         placeholder="Your Message"></textarea>
                     </div>
                     <div class="col-12">
@@ -163,8 +176,14 @@
             </div>
           </section>
 
-
       </div>
+
+      
+          <footer class="footer mt-5">
+            <p class="text-xs gray text-center py-4 mb-0">© 2025 Muhammad Yaseen. All rights reserved.</p>
+          </footer>
+
+
     </div>
 
 

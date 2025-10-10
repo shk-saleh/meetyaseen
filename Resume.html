@@ -21,46 +21,43 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Responsive.css">
 
 </head>
 
 <body>
   <!-- ================= Canvas ================= -->
 
+  <div class="star-container"></div>
 
   <!--LEFT ASIDE_BOX -->
+
 
   <div class="container-fluid main-canvas">
     <div class="row">
       <div class="col-lg-4">
-        <div class="profile-card">
-          <!-- Top icons -->
-          <div class="profile-top">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-cog"></i>
-          </div>
-
+        <div class="profile-card Border">
           <!-- Profile Image -->
           <div class="profile-img">
-            <img src="https://picsum.photos/400/400" alt="Profile">
+            <img src="./Assets/photo.png" alt="Profile">
           </div>
 
           <!-- Profile Info -->
-          <div class="profile-info">
+          <div class="profile-info mt-4">
             <h2 class="name">Muhammad Yaseen</h2>
-            <p class="role">Master Trainer</p>
+            <span class="role">Master Trainer/Educator</span>
           </div>
 
           <!-- Social Links -->
           <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-reddit-alien"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#" class="Border"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="Border"><i class="fab fa-reddit-alien"></i></a>
+            <a href="#" class="Border"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="Border"><i class="fab fa-github"></i></a>
           </div>
 
           <!-- Button -->
-          <button class="download-btn">Download CV</button>
+          <button class="download-btn mt-3">Download CV</button>
         </div>
 
       </div>
@@ -72,14 +69,32 @@
 
       <div class="col-lg-8  right-aside-box">
         <!-- ================= NAVBAR ================= -->
-        <nav class="custom-navbar">
-          <ul>
+        <nav class="custom-navbar d-flex align-items-center justify-content-between">
+          <!-- Hamburger for mobile -->
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" id="navbarHamburger">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+          <!-- Nav links -->
+          <ul class="navbar-links d-none d-lg-flex mb-0">
             <li><a href="index.html">About</a></li>
-            <li><a href="Resume.html active">Resume</a></li>
+            <li><a href="Resume.html" class="active">Resume</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+          <!-- Theme toggle button -->
+          <button id="themeToggle" class="theme-toggle-btn ms-2 border-0 bg-transparent">
+            <span id="themeIcon">
+              <i class="fa-solid fa-sun"></i>
+            </span>
+          </button>
         </nav>
+        <!-- Mobile nav links (hidden by default) -->
+        <ul class="navbar-links-mobile d-lg-none" id="mobileNav" style="display:none;">
+          <li><a href="index.html">About</a></li>
+          <li><a href="Resume.html" class="active">Resume</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
 
 
@@ -93,52 +108,40 @@
 
 
           <div class="experince-section">
-            <!-- <h2 class="heading-title">What Clients Say!</h2> -->
             <div class="experience-line"></div>
-            <div class="experience-dot-1"></div>
-            <div class="experience-dot-2"></div>
 
             <div class="exp-container">
 
-              <!-- Testimonial 1 -->
-              <div class="experince-card Border">
-
-                <h3 class="text-sm yellow">2022-2024</h3>
-                <h3 class="text-sm">Senior IT Project Manager</h3>
-                <p class="location">Los Angeles, Google</p>
-                <p>Curated strategic partnerships with state manufacturing companies which resulted in additional
-                  annual
-                  revenue.</p>
+               <div class="experince-card Border">
+                <span id="experience-dot-1"></span>
+                <h3 class="text-sm yellow">2007 – Present</h3>
+                <h3 class="text-sm role">Master Trainer / Educator</h3>
+                <p class="location">Punjab Education Foundation, Lahore</p>
+                <p>Conducting professional training sessions, developing mathematics modules, and facilitating school improvement programs across Punjab.</p>
               </div>
 
-              <!-- Testimonial 2 -->
-              <div class="experince-card Border ">
-                <h3 class="text-sm yellow">2022-2024</h3>
-                <h3 class="text-sm">Senior IT Project Manager</h3>
-                <p class="location">Los Angeles, Google</p>
-                <p>Curated strategic partnerships with state manufacturing companies which resulted in additional
-                  annual
-                  revenue.</p>
+              <div class="experince-card Border">
+                <span id="experience-dot-2"></span>
+                <h3 class="text-sm yellow">2004 – 2006</h3>
+                <h3 class="text-sm role">Lecturer (Mathematics)</h3>
+                <p class="location">Cadet College Murree, Rawalpindi</p>
+                <p>Taught Mathematics at Matric & Intermediate levels, served as Housemaster and member of Examination Cell.</p>
               </div>
 
-              <!-- Testimonial 3 -->
               <div class="experince-card Border">
-                <h3 class="text-sm yellow">2022-2024</h3>
-                <h3 class="text-sm">Senior IT Project Manager</h3>
-                <p class="location">Los Angeles, Google</p>
-                <p>Curated strategic partnerships with state manufacturing companies which resulted in additional
-                  annual
-                  revenue.</p>
+                <span id="experience-dot-3"></span>
+                <h3 class="text-sm yellow">2003 – 2004</h3>
+                <h3 class="text-sm role">Lecturer (Mathematics)</h3>
+                <p class="location">Rawal Cadet College, Rawalpindi</p>
+                <p>Taught O’Level Mathematics and prepared subject materials for students.</p>
               </div>
 
-              <!-- Testimonial 4 -->
               <div class="experince-card Border">
-                <h3 class="text-sm yellow">2022-2024</h3>
-                <h3 class="text-sm">Senior IT Project Manager</h3>
-                <p class="location">Los Angeles, Google</p>
-                <p>Curated strategic partnerships with state manufacturing companies which resulted in additional
-                  annual
-                  revenue.</p>
+                <span id="experience-dot-4"></span>
+                <h3 class="text-sm yellow">2002 – 2003</h3>
+                <h3 class="text-sm role">Lecturer (Mathematics)</h3>
+                <p class="location">Sultana Foundation, Islamabad</p>
+                <p>Taught Mathematics to Intermediate classes and developed interactive teaching aids.</p>
               </div>
 
 
@@ -148,46 +151,60 @@
 
 
           <div class="education-section">
-            <div class="title-box ">
-              <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-book-fill"></i>COURSES</h3>
-              <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-book-fill"></i>EDUCATION</h3>
-            </div>
             <div class="grid-boxes">
-
-              <div class="grid-box">
-                <h3 class="text-sm date-border">2020-2025</h3>
-                <h2 class="text-sm">Bachlor in Maths</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero labore in tempora amet non ad
-                  aperiam.</p>
-                <h2 class="text-sm">Certificate > </h2>
+              <div>
+                <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-book-fill"></i>ACADEMIC</h3>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">2010 – 2012</h3>
+                  <h2 class="text-sm role">M.Phil. Educational Planning & Management</h2>
+                  <p>Allama Iqbal Open University, Islamabad</p>
+                </div>
+                <span class="divider"></span>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">2008 – 2010</h3>
+                  <h2 class="text-sm role">M.A. Educational Planning & Management</h2>
+                  <p>Allama Iqbal Open University, Islamabad</p>
+                </div>
+                <span class="divider"></span>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">1998 – 2001</h3>
+                  <h2 class="text-sm role">M.Sc. Mathematics</h2>
+                  <p>University of the Punjab, Lahore</p>
+                </div>
+                <span class="divider"></span>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">1999 – 2001</h3>
+                  <h2 class="text-sm role">Bachelor of Education (B.Ed)</h2>
+                  <p>Allama Iqbal Open University, Islamabad</p>
+                </div>
+                <span class="divider"></span>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">1996 – 1998</h3>
+                  <h2 class="text-sm role">B.Sc. (Math A&B, Statistics)</h2>
+                  <p>Govt. Gordon College, Rawalpindi</p>
+                </div>
+                <span class="divider"></span>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">1994 – 1996</h3>
+                  <h2 class="text-sm role">Intermediate (F.Sc)</h2>
+                  <p>BISE Rawalpindi</p>
+                </div>
+                <span class="divider"></span>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">1992 – 1994</h3>
+                  <h2 class="text-sm role">Matric (Arts)</h2>
+                  <p>BISE Rawalpindi</p>
+                </div>
               </div>
-
-              <div class="grid-box">
-                <h3 class="text-sm date-border">2020-2025</h3>
-                <h2 class="text-sm">Bachlor in Maths</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero labore in tempora amet non ad
-                  aperiam.</p>
-                <h2 class="text-sm">Certificate > </h2>
+              <div>
+                <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-book-fill"></i>PROFESSIONAL</h3>
+                <div class="grid-box">
+                  <h3 class="text-sm date-border">2005 - 2007</h3>
+                  <h2 class="text-sm role">Post Graduate Diploma in IT</h2>
+                  <p>COMSATS Institute of Information Technology, Islamabad</p>
+                  <p>Projects: Payroll System, Inventory System, Account System</p>
+                </div>
               </div>
-
-              <div class="grid-box">
-                <h3 class="text-sm date-border">2020-2025</h3>
-                <h2 class="text-sm">Bachlor in Maths</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero labore in tempora amet non ad
-                  aperiam.</p>
-                <h2 class="text-sm">Certificate > </h2>
-              </div>
-
-              <div class="grid-box">
-                <h3 class="text-sm date-border">2020-2025</h3>
-                <h2 class="text-sm">Bachlor in Maths</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero labore in tempora amet non ad
-                  aperiam.</p>
-                <h2 class="text-sm">Certificate > </h2>
-              </div>
-
-
-
             </div>
           </div>
 
@@ -337,17 +354,29 @@
             </div>
           </section>
         
-          <div class="language-section " id="skills-section">
-
-
-             
-            <div class="row mt-5 px-3 ">
-              <div class="title-box ">
-              <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-translate-2"></i>LANGUAGE</h3>
-              <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-list-unordered"></i>SOFT SKILLS</h3>
-            </div>
-
+          <div class="row language-section " id="skills-section">
+ 
               <div class="col-lg-6 py-4 language-wrapper">
+                <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-translate-2"></i>LANGUAGE</h3>
+                <div class="language-box ">
+                  <div class="flag"><img src="https://flagcdn.com/80x60/pk.png" alt="Italian"></div>
+                  <div class="language-info">
+                    <p class="lang-name">Urdu</p>
+                    <div class="dots">
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                      <span class="dot filled"></span>
+                    </div>
+                  </div>
+                  <span class="percent">100%</span>
+                </div>
                 <div class="language-box ">
                   <div class="flag"><img src="https://flagcdn.com/w40/gb.png" alt="English"></div>
                   <div class="language-info">
@@ -367,30 +396,10 @@
                   </div>
                   <span class="percent">90%</span>
                 </div>
-                <div class="language-box ">
-                  <div class="flag"><img src="https://flagcdn.com/w40/it.png" alt="Italian"></div>
-                  <div class="language-info">
-                    <p class="lang-name">Italian</p>
-                    <div class="dots">
-                      <span class="dot filled"></span>
-                      <span class="dot filled"></span>
-                      <span class="dot filled"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                    </div>
-                  </div>
-                  <span class="percent">30%</span>
-                </div>
               </div>
-                
-              
-              <div class="col-lg-5 py-2">
-             
+                 
+              <div class="col-lg-6 py-2">
+                <h3 class="resume-titles text-sm px-2 my-5 mb-0 "><i class="ri-list-unordered"></i>SOFT SKILLS</h3>
                 <ul class="checklist text-sm">
                   <li>Strategic project planning</li>
                   <li>Project scope</li>
@@ -399,14 +408,18 @@
                   <li>Communication</li>
                 </ul>
               </div>
-            </div>
           </div>
-
-
 
         </section>
 
       </div>
+
+       
+          <footer class="footer mt-5">
+            <p class="text-xs gray text-center py-4 mb-0">© 2025 Muhammad Yaseen. All rights reserved.</p>
+          </footer>
+
+
     </div>
 
 

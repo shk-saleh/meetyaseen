@@ -27,40 +27,55 @@
 <body>
   <!-- ================= Canvas ================= -->
 
+  <div class="star-container"></div>
 
-  <!--LEFT ASIDE_BOX -->
 
   <div class="container-fluid main-canvas">
+    
     <div class="row">
       <div class="col-lg-4">
-        <div class="profile-card">
-          <!-- Top icons -->
-          <div class="profile-top">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-cog"></i>
-          </div>
 
+        <nav class="custom-navbar d-md-none d-flex align-items-center justify-content-between py-3">
+          <!-- Hamburger for mobile -->
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" id="navbarHamburger">
+            <i class="fas fa-bars fa-2x text-light"></i>
+          </button>
+          <!-- Theme toggle button -->
+          <button id="themeToggle" class="d-md-none d-flex theme-toggle-btn ms-2 border-0 bg-transparent">
+            <span id="themeIcon"><i class="fa-solid fa-sun"></i></span>
+          </button>
+        </nav>
+        <!-- Mobile nav links -->
+        <ul class="navbar-links-mobile d-lg-none list-unstyled bg-light text-center py-3 shadow-sm rounded"
+          id="mobileNav" style="display: none;">
+          <li class="py-2"><a href="index.html" class="text-decoration-none text-dark">About</a></li>
+          <li class="py-2"><a href="Resume.html" class="text-decoration-none text-dark active">Resume</a></li>
+          <li class="py-2"><a href="blog.html" class="text-decoration-none text-dark">Blog</a></li>
+          <li class="py-2"><a href="contact.html" class="text-decoration-none text-dark">Contact</a></li>
+        </ul>
+
+        <div class="profile-card Border">
           <!-- Profile Image -->
           <div class="profile-img">
-            <img src="https://picsum.photos/400/400" alt="Profile">
+            <img src="./Assets/photo.png" alt="Profile">
           </div>
 
           <!-- Profile Info -->
-          <div class="profile-info">
+          <div class="profile-info mt-4">
             <h2 class="name">Muhammad Yaseen</h2>
-            <p class="role">Master Trainer</p>
+            <span class="role">Master Trainer/Educator</span>
           </div>
 
           <!-- Social Links -->
           <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-reddit-alien"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#" class="Border"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="Border"><i class="fab fa-reddit-alien"></i></a>
+            <a href="#" class="Border"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="Border"><i class="fab fa-github"></i></a>
           </div>
 
           <!-- Button -->
-          <button class="download-btn">Download CV</button>
+          <button class="download-btn mt-3">Download CV</button>
         </div>
 
       </div>
@@ -72,93 +87,78 @@
 
       <div class="col-lg-8  right-aside-box">
         <!-- ================= NAVBAR ================= -->
-         <nav class="custom-navbar">
-          <ul>
-            <li><a href="index.html active">About</a></li>
-            <li><a href="Resume.html">Resume</a></li>
+        <nav class="custom-navbar d-lg-flex d-none align-items-center justify-content-between py-3 px-2">
+         <!-- Hamburger for mobile -->
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" id="navbarHamburger">
+            <i class="fas fa-bars fa-2x text-light"></i>
+          </button>
+
+          <!-- Nav links (desktop only) -->
+          <ul class="navbar-links d-none d-lg-flex mb-0 list-unstyled gap-4">
+            <li><a href="index.html">About</a></li>
+            <li><a href="Resume.html" class="active">Resume</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+
+          <!-- Theme toggle button -->
+          <button id="themeToggle" class="theme-toggle-btn ms-2 border-0 bg-transparent">
+            <span id="themeIcon"><i class="fa-solid fa-sun"></i></span>
+          </button>
         </nav>
+
+        <!-- Mobile nav links -->
+        <ul class="navbar-links-mobile d-lg-none list-unstyled bg-light text-center py-3 shadow-sm rounded"
+          id="mobileNav" style="display: none;">
+          <li class="py-2"><a href="index.html" class="text-decoration-none text-dark">About</a></li>
+          <li class="py-2"><a href="Resume.html" class="text-decoration-none text-dark active">Resume</a></li>
+          <li class="py-2"><a href="blog.html" class="text-decoration-none text-dark">Blog</a></li>
+          <li class="py-2"><a href="contact.html" class="text-decoration-none text-dark">Contact</a></li>
+        </ul>
+
 
         <!-- ================= HOME SECTION ================= -->
 
         <section class="home-section">
-          <h3 class="text-sm">Hello, I’m <span class="yellow">Teacher & Teacher Trainer</span></h3>
+          <h3 class="text-sm">Hello, I’m <span class="yellow">Educator & Master Trainer</span></h3>
           <h1 class="text-lg">
             Dedicated Educator <br>
             and <span class="highlight-bg">Professional</span>
             Teacher Trainer Based in Pakistan
           </h1>
 
-            <p class="bold py-5">With over 18 years of experience as a Teacher and Master Trainer at the Punjab Education Foundation, I specialize in teaching Mathematics to senior school students while also designing and delivering impactful teacher training programs. Skilled in curriculum development, classroom management, and modern teaching methodologies, with a proven record of mentoring educators and enhancing learning outcomes. Recognized for the ability to inspire students and train teachers to achieve excellence in education.</p>
+            <p class="bold pt-2 pb-5">With over 18 years of experience as a Teacher and Master Trainer at the Punjab Education Foundation, I specialize in teaching Mathematics to senior school students while also designing and delivering impactful teacher training programs. Skilled in curriculum development, classroom management, and modern teaching methodologies, with a proven record of mentoring educators and enhancing learning outcomes. Recognized for the ability to inspire students and train teachers to achieve excellence in education.</p>
           
           <div class="stats">
 
             <div class="text-lg d-flex flex-direction-column gap-2">
-              <h3 class="text-lg">10+</h3>
+              <h3 class="text-lg">24Y+</h3>
               <p class="py-3">Teaching Experience</p>
             </div>
 
             <div class="text-lg d-flex flex-direction-column gap-2">
-              <h3 class="text-lg">500+</h3>
+              <h3 class="text-lg">50k+</h3>
               <p class="py-3">Students <br> Mentored</p>
             </div>
 
             <div class="text-lg d-flex flex-direction-column gap-2">
-              <h3 class="text-lg">50+</h3>
+              <h3 class="text-lg">1k+</h3>
               <p class="py-3">Workshops Trainings</p>
             </div>
               
           </div>
         </section>
 
-        
-
-     
-
       </div>
 
-
-
     </div>
+ 
+    <footer class="footer mt-5">
+      <p class="text-xs gray text-center py-4 mb-0">© 2025 Muhammad Yaseen. All rights reserved.</p>
+    </footer>
+
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ================= DETAIL SECTION ================= -->
-
-
-
-  <!-- ================= GALLERY SECTION ================= -->
-
-
-  <!-- ================= COLLECTION SECTION ================= -->
-
-
-  <!-- ================= INFO ================= -->
-
-
-
-  <!-- ================= FOOTER ================= -->
 
 
 
@@ -175,6 +175,7 @@
 
   <!-- ================= CUSTOM js ================= -->
   <script src="js/script.js"></script>
+
 
 
 </body>
