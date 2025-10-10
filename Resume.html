@@ -36,6 +36,27 @@
   <div class="container-fluid main-canvas">
     <div class="row">
       <div class="col-lg-4">
+
+        <nav class="custom-navbar d-md-none d-flex align-items-center justify-content-between py-3">
+          <!-- Hamburger for mobile -->
+          <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" id="navbarHamburger">
+            <i class="fas fa-bars fa-2x text-light"></i>
+          </button>
+          <!-- Theme toggle button -->
+          <button id="themeToggle" class="d-md-none d-flex theme-toggle-btn ms-2 border-0 bg-transparent">
+            <span id="themeIcon"><i class="fa-solid fa-sun"></i></span>
+          </button>
+        </nav>
+        <!-- Mobile nav links -->
+        <ul class="navbar-links-mobile d-lg-none list-unstyled text-center py-3 shadow-sm rounded mb-3"
+          id="mobileNav" style="display: none;">
+          <li class="py-2"><a href="index.html" class="text-decoration-none text-light">About</a></li>
+          <li class="py-2"><a href="Resume.html" class="text-decoration-none text-light active">Resume</a></li>
+          <li class="py-2"><a href="blog.html" class="text-decoration-none text-light">Blog</a></li>
+          <li class="py-2"><a href="contact.html" class="text-decoration-none text-light">Contact</a></li>
+        </ul>
+
+
         <div class="profile-card Border">
           <!-- Profile Image -->
           <div class="profile-img">
@@ -69,31 +90,33 @@
 
       <div class="col-lg-8  right-aside-box">
         <!-- ================= NAVBAR ================= -->
-        <nav class="custom-navbar d-flex align-items-center justify-content-between">
-          <!-- Hamburger for mobile -->
+        <nav class="custom-navbar d-lg-flex d-none align-items-center justify-content-between py-3 px-2">
+         <!-- Hamburger for mobile -->
           <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" id="navbarHamburger">
-            <i class="fas fa-bars fa-2x"></i>
+            <i class="fas fa-bars fa-2x text-light"></i>
           </button>
-          <!-- Nav links -->
-          <ul class="navbar-links d-none d-lg-flex mb-0">
+
+          <!-- Nav links (desktop only) -->
+          <ul class="navbar-links d-none d-lg-flex mb-0 list-unstyled gap-4">
             <li><a href="index.html">About</a></li>
             <li><a href="Resume.html" class="active">Resume</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+
           <!-- Theme toggle button -->
           <button id="themeToggle" class="theme-toggle-btn ms-2 border-0 bg-transparent">
-            <span id="themeIcon">
-              <i class="fa-solid fa-sun"></i>
-            </span>
+            <span id="themeIcon"><i class="fa-solid fa-sun"></i></span>
           </button>
         </nav>
-        <!-- Mobile nav links (hidden by default) -->
-        <ul class="navbar-links-mobile d-lg-none" id="mobileNav" style="display:none;">
-          <li><a href="index.html">About</a></li>
-          <li><a href="Resume.html" class="active">Resume</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+        <!-- Mobile nav links -->
+        <ul class="navbar-links-mobile d-lg-none list-unstyled text-center py-3 shadow-sm rounded"
+          id="mobileNav" style="display: none;">
+          <li class="py-2"><a href="index.html" class="text-decoration-none text-light">About</a></li>
+          <li class="py-2"><a href="Resume.html" class="text-decoration-none text-light active">Resume</a></li>
+          <li class="py-2"><a href="blog.html" class="text-decoration-none text-light">Blog</a></li>
+          <li class="py-2"><a href="contact.html" class="text-decoration-none text-light">Contact</a></li>
         </ul>
 
 

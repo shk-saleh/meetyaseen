@@ -6,10 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
-/* rokwal */
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -269,9 +265,9 @@ p{
   display: flex;
   justify-content: flex-start;
   margin-bottom: var(--space-5);
-  margin-left: -40px;
   padding: 0.5rem 1rem;
 }
+
 .custom-navbar ul {
   list-style: none;
   display: flex;
@@ -308,7 +304,8 @@ p{
 }
 .navbar-links-mobile {
   flex-direction: column;
-  background: var(--bg-color, #fff);
+  background: black;
+  border: 1px solid var(--border);
   padding: 1rem;
   border-radius: 8px;
 }
@@ -472,9 +469,6 @@ p{
     font-size: 0.8rem;
     justify-content: center;
 }
-
-
-
 
 
 /* ================================
